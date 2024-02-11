@@ -1,0 +1,12 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+    <ng-container >
+
+    </ng-container>
+    @if(!isUserAuthenticated){
+      <app-login (userAuthUpdate)="updateLoginView($event)"></app-login>
+    }@else {
+      <app-welcome></app-welcome>
+    }
+</div>

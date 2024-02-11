@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:JWT": "node dist/jwt/server/server.mjs"
+    "serve:ssr:JWT": "node dist/jwt/server/server.mjs",
+    "startBackend": "nodemon backend/index.js"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +22,11 @@
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.5",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "D": "^1.0.0",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
@@ -39,6 +44,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nodemon": "^3.0.3",
     "typescript": "~5.2.2"
   }
 }
