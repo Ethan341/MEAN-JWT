@@ -1,1 +1,1 @@
- Implemented JWT(JSON Web Token) with Aangular and express
+Implemented JWT(JSON Web Token) with angular and express.js
